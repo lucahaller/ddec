@@ -3,6 +3,7 @@ import edificio from "../Empresas/Privados/Casadoro/CONSULTORIO/edificio.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   useEffect(() => {
@@ -14,13 +15,13 @@ export default function Hero() {
   });
 
   return (
-    <div class=" container mx-auto flex px-5 py-24 flex-col justify-center  gap-20 items-center">
-      <div className="flex flex-col md:flex-row lg:flex-row">
+    <div class=" container mx-auto flex px-5  flex-col justify-center  gap-20 items-center">
+      <div className="flex flex-col  items-center justify-center h-screen md:flex-row lg:flex-row">
         <div
           data-aos="fade-up-right"
           dat
           a-aos-anchor-placement="center-bottom"
-          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-full"
+          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-2/5"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -54,7 +55,7 @@ export default function Hero() {
         </div>
       </div>
       <div
-        className="flex flex-col-reverse md:flex-row lg:flex-row"
+        className="flex h-screen items-center justify-center flex-col-reverse md:flex-row lg:flex-row"
         id="edificio"
       >
         <div
@@ -84,7 +85,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-full"
+          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-2/5"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -94,11 +95,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row lg:flex-row" id="pellegrini">
+      <div className=" h-screen   flex items-center justify-centerflex-col md:flex-row lg:flex-row">
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-full"
+          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-2/5"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -117,14 +118,18 @@ export default function Hero() {
             <p>San Rafael</p>
           </h1>
           <p class="mb-8 leading-relaxed text-white">
-            Se logró realizar una parque de locos, creado para cuando crezca la
-            piculera emilia valentina poder jugar con la pelota, ginda, muñecas
-            o con su catana y dejar a sus primos en paz.
+            Se realizó la construcción del Paseo Pelegrini, en uno de los
+            lugares mas concurridos ubicado en el centro de San Rafael en dónde
+            se encuentran gran parte de las tiendas, negocios y heladerías que
+            habitan la ciudad.
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
+            <a
+              href="/muni/#pellegrini"
+              class="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
+            >
               Ver Proyecto
-            </button>
+            </a>
             <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Conctáctanos
             </button>

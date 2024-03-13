@@ -18,7 +18,7 @@ const Project = () => {
       <section id="about" className="">
         <About />
       </section>
-      <section class="text-gray-600  h-full flex items-center bg-gray-800 body-font ">
+      <section class="text-gray-600    bg-gray-800 body-font ">
         <Hero />
       </section>
       <section
