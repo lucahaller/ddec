@@ -49,5 +49,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")], // No necesitas usar require aquí
+  plugins: [require("flowbite/plugin", "tw-elements/plugin.cjs")], // No necesitas usar require aquí
 };
