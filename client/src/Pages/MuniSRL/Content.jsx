@@ -4,13 +4,20 @@ import { Button } from "flowbite-react";
 import { useEffect, useState } from "react";
 import Modal from "../../Components/Modal";
 import ImagesBiblioteca from "../../Empresas/Muni/BibliotecaMMoreno";
+import ImagesCanchaH from "../../Empresas/Muni/Cancha_Hockey";
 import ImagesCicloVía from "../../Empresas/Muni/Ciclo Vía";
+import ImagesColector from "../../Empresas/Muni/ColectorIndustrial";
 import ImagesComedorUni from "../../Empresas/Muni/Comedor_Universitario";
+import ImagesEstaciones from "../../Empresas/Muni/EstacionesEco";
 import ImagesMuseo from "../../Empresas/Muni/Museo San Rafael";
 import ImagesParque from "../../Empresas/Muni/ParqueNiños";
 import ImagesPelegrini from "../../Empresas/Muni/PaseoPelegrini";
 import ImagesPlayonD from "../../Empresas/Muni/Playon_Deportivo_Balofett";
 import ImagesPlazaRosas from "../../Empresas/Muni/Plaza Salto de Las Rosas";
+import ImagesPlazaB from "../../Empresas/Muni/Plaza_Belgrano";
+import ImagesPlazaRama from "../../Empresas/Muni/Plaza_Rama_Caída";
+import ImagesRedSar from "../../Empresas/Muni/Red de ClocaCsarmiento";
+import ImagesRedSaniamiento from "../../Empresas/Muni/ReddeCloaca";
 export default function Content() {
   useEffect(() => {
     AOS.init({
@@ -48,6 +55,27 @@ export default function Content() {
     }
     if (e.target.id === "bmoreno") {
       setImagenes(Object.values(ImagesBiblioteca));
+    }
+    if (e.target.id === "canchah") {
+      setImagenes(Object.values(ImagesCanchaH));
+    }
+    if (e.target.id === "plazab") {
+      setImagenes(Object.values(ImagesPlazaB));
+    }
+    if (e.target.id === "plazarama") {
+      setImagenes(Object.values(ImagesPlazaRama));
+    }
+    if (e.target.id === "redsar") {
+      setImagenes(Object.values(ImagesRedSar));
+    }
+    if (e.target.id === "redsan") {
+      setImagenes(Object.values(ImagesRedSaniamiento));
+    }
+    if (e.target.id === "estacion") {
+      setImagenes(Object.values(ImagesEstaciones));
+    }
+    if (e.target.id === "colector") {
+      setImagenes(Object.values(ImagesColector));
     }
     setIsModalOpen(true);
   }
@@ -637,6 +665,498 @@ export default function Content() {
             </div>
           </div>
         </div>
+        <div
+          id="hockey"
+          className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        >
+          <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
+            <div className="flex flex-col justify-center">
+              <div className="max-w-xl mb-6">
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Cancha de Hockey
+                  <br className="hidden md:block" />
+                </h2>
+                <p className="text-base text-gray-700 md:text-lg">
+                  Se realizó la construcción de la Cancha de Hockey cercada con
+                  banquillos de suplentes para cada equipo techados y reforzados
+                </p>
+                <div className=" flex  cursor-pointer">
+                  <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                    <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                        className="w-5 h-5 text-gray-400"
+                      >
+                        <path
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                        className="w-5 h-5 text-sky-700"
+                      >
+                        <path
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                    <button
+                      id="canchah"
+                      onClick={(e) => pushdatos(e)}
+                      className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-200"
+                    >
+                      Ver Imágenes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="flip-right"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                src={ImagesCanchaH.diez}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          id="plazab"
+          className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        >
+          <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
+            <div
+              data-aos="flip-right"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                src={ImagesPlazaB.dos}
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <div className="max-w-xl mb-6">
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Plaza Manuel Belgrano
+                  <br className="hidden md:block" />
+                </h2>
+                <p className="text-base text-gray-700 md:text-lg">
+                  Se realizó la construcción de la Plaza Manuel Belgrano ubicada
+                  en el distrito de Salto De Las Rosas
+                </p>
+                <div className=" flex  cursor-pointer">
+                  <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                    <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                        className="w-5 h-5 text-gray-400"
+                      >
+                        <path
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                        className="w-5 h-5 text-sky-700"
+                      >
+                        <path
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                    <button
+                      id="plazab"
+                      onClick={(e) => pushdatos(e)}
+                      className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-200"
+                    >
+                      Ver Imágenes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="plazarama"
+          className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        >
+          <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
+            <div className="flex flex-col justify-center">
+              <div className="max-w-xl mb-6">
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Plaza Rama Caída
+                  <br className="hidden md:block" />
+                </h2>
+                <p className="text-base text-gray-700 md:text-lg">
+                  Se realizó la construcción de la Plaza del distrito de Rama
+                  Caída
+                </p>
+                <div className=" flex  cursor-pointer">
+                  <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                    <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                        className="w-5 h-5 text-gray-400"
+                      >
+                        <path
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        fill="none"
+                        className="w-5 h-5 text-sky-700"
+                      >
+                        <path
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                    <button
+                      id="plazarama"
+                      onClick={(e) => pushdatos(e)}
+                      className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-200"
+                    >
+                      Ver Imágenes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="flip-right"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                src={ImagesPlazaRama.catorce}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                  Más Proyectos Realizados
+                </h1>
+                <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+              </div>
+              <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                A parte de los grandes proyectos vistos recientemente, contámos
+                con más proyectos como redes de saniamiento, Estaciones
+                Ecológicas, Mantenimientos de sitios importantes como el Km0
+                (Punto de Encuentro Centro de San Rafael), Urbanizaciones de
+                Loteos, entro otros.
+              </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img
+                    class="h-40 rounded w-full object-cover object-center mb-6"
+                    src={ImagesRedSar.cuatro}
+                    alt="content"
+                  />
+                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    Redes
+                  </h3>
+                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                    Red Cloacas Av. Sarmiento
+                  </h2>
+                  <p class="leading-relaxed text-lg">
+                    Se realizo la construccion de las redes de cloacas de la
+                    Avenida Sarmiento
+                  </p>
+                  <div className=" flex mt-7 cursor-pointer">
+                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-gray-400"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-sky-700"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <button
+                        id="redsar"
+                        onClick={(e) => pushdatos(e)}
+                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
+                      >
+                        Ver Imágenes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img
+                    class="h-40 rounded w-full object-cover object-center mb-6"
+                    src={ImagesRedSaniamiento.catorce}
+                    alt="content"
+                  />
+                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    Redes
+                  </h3>
+                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                    Redes de Saniamiento
+                  </h2>
+                  <p class="leading-relaxed text-lg">
+                    Se realizaron las construcciones de diferentes redes de
+                    saniamiento
+                  </p>
+                  <div className=" flex  mt-7 cursor-pointer">
+                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-gray-400"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-sky-700"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <button
+                        id="redsan"
+                        onClick={(e) => pushdatos(e)}
+                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
+                      >
+                        Ver Imágenes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img
+                    class="h-40 rounded w-full object-cover object-center mb-6"
+                    src={ImagesEstaciones.uno}
+                    alt="content"
+                  />
+                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    Estaciones
+                  </h3>
+                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                    Estaciones Ecológicas San Rafael
+                  </h2>
+                  <p class="leading-relaxed text-lg">
+                    Se realizó varias construcciones de las Estaciones
+                    Ecológicas situadas en diferentes puntos de la ciudad.
+                  </p>
+                  <div className=" flex  cursor-pointer">
+                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-gray-400"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-sky-700"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <button
+                        id="estacion"
+                        onClick={(e) => pushdatos(e)}
+                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
+                      >
+                        Ver Imágenes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img
+                    class="h-40 rounded w-full object-cover object-center mb-6"
+                    src={ImagesColector.tres}
+                    alt="content"
+                  />
+                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    Colectores
+                  </h3>
+                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                    Colector Industrial
+                  </h2>
+                  <p class="leading-relaxed text-lg">
+                    Se realizó la construcción del Colector Industrial de la
+                    ciudad de San Rafael, Mendoza.
+                  </p>
+                  <div className=" flex  cursor-pointer">
+                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-gray-400"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-sky-700"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <button
+                        id="colector"
+                        onClick={(e) => pushdatos(e)}
+                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
+                      >
+                        Ver Imágenes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <Modal
