@@ -55,7 +55,7 @@ export default function Muni() {
                 proyecto parecido no dudes en contactárnos!
               </p>
               <a
-                href="#"
+                href="/#contacto"
                 className="bg-indigo-500 text-white text-xl font-bold py-3 px-10 rounded-xl hover:bg-indigo-600"
               >
                 Contáctanos
