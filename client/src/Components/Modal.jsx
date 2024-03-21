@@ -14,7 +14,7 @@ export default function Modal({ open, onClose, images }) {
             <IoIosCloseCircleOutline />
           </button>
         </div>
-        <div className=" rounded-lg shadow-xl  lg:p-28 xl:p-20 xxl:p-20  xsm:py-20 xsm:p-0 overflow-hidden h-full">
+        <div className=" rounded-lg shadow-xl  lg:p-28 xl:p-20 xxl:p-20  xs:py-20 xs:p-0 overflow-hidden h-full">
           <div className="relative w-full  ">
             <Carousel
               showArrows={true}

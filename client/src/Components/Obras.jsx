@@ -28,7 +28,7 @@ export default function Obras() {
       img: "https://pbs.twimg.com/profile_images/1721909416436633600/6_fahV1p_400x400.jpg",
       name: "Irrigación",
       direc: "/irrigación",
-      bg: "",
+      bg: "before:bg-irrig",
     },
     {
       img: "https://yt3.googleusercontent.com/ytc/AIf8zZT6aLQXpX8jlB8rhgeSXZLRNzR5h_dAsAM8BkTU_Q=s900-c-k-c0x00ffffff-no-rj",

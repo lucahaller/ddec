@@ -13,6 +13,7 @@ module.exports = {
       afip: 'url("../src/Empresas/Afip/CIELORRASOS_SR/1.jpeg")',
       ipv: 'url("../src/Empresas/IPV/1.jpg")',
       bgafip: 'url("../src/Assets/bgafip.png")',
+      irrig: 'url("../src/Empresas/Irrigación/Compuertas/2.jpeg")',
     },
 
     screens: {
