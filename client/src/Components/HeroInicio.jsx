@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Carousel } from "flowbite-react";
 import park from "../Empresas/Muni/ParqueNiños/9.jpeg";
-import aguatoro from "../OBRAS/PampaAguaDelToro/2.jpeg";
-import trafo from "../OBRAS/Base_Transformador_PAMPA/1.jpeg";
+import aguatoro from "../Empresas/Pampa/PampaAguaDelToro/2.jpeg";
+import trafo from "../Empresas/Pampa/Base_Transformador_PAMPA/1.jpeg";
 export default function HeroInicio() {
   // Lista de imágenes de fondo
   const backgrounds = [`url(${trafo})`, `url(${aguatoro})`, `url(${park})`];

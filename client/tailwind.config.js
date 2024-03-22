@@ -8,7 +8,7 @@ module.exports = {
     backgroundImage: {
       atras: 'url("../src/OBRAS/CasaMujer/Etapa_1/13.jpeg")',
       muni: 'url("../src/Empresas/Muni/ParqueNiños/7.jpeg")',
-      pampa: 'url("../src/OBRAS/Base_Transformador_PAMPA/10.jpeg")',
+      pampa: 'url("../src/Empresas/Pampa/Base_Transformador_PAMPA/10.jpeg")',
       priv: 'url("../src/Empresas/Privados/Casadoro/CONSULTORIO/edificio.jpg")',
       afip: 'url("../src/Empresas/Afip/CIELORRASOS_SR/1.jpeg")',
       ipv: 'url("../src/Empresas/IPV/1.jpg")',
