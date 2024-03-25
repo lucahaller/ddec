@@ -35,10 +35,10 @@ export default function HeroInicio() {
     >
       <section className="w-full bg-cover bg-center py-32">
         <div className="container h-full mx-auto text-center text-white flex flex-col items-center justify-center">
-          <h1 className="text-7xl font-bold  mb-6">
+          <h1 className="text-7xl xs:text-5xl font-bold  mb-6">
             Empresa Constructora DDEC S.R.L
           </h1>
-          <p className="text-4xl mb-12">
+          <p className="text-4xl xs:text-3xl mb-12">
             Desarrollo de Estructuras Cíviles de San Rafael,Mendoza
           </p>
           <a
