@@ -25,7 +25,7 @@ const Project = () => {
         id="empresasyproyectos"
         className="flex flex-col items-center justify-center h-screen "
       >
-        <h1 className=" flex items-center font-Kanit justify-center text-bold text-6xl">
+        <h1 className="mt-20 flex text-center items-center font-Kanit justify-center text-bold text-5xl">
           Empresas & Proyectos
         </h1>
         <Obras />

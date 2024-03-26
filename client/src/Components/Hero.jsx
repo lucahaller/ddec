@@ -39,16 +39,16 @@ export default function Hero() {
             <br class="hidden lg:inline-block" />
             <p>San Rafael</p>
           </h1>
-          <p class="mb-8 leading-relaxed text-white">
+          <p class="mb-8 leading-relaxed text-justify text-white">
             Se logró realizar una parque de locos, creado para cuando crezca la
             piculera emilia valentina poder jugar con la pelota, ginda, muñecas
             o con su catana y dejar a sus primos en paz.
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
+            <button class="inline-flex text-white bg-gray-500 border-0 xs:py-1 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
               Ver Proyecto
             </button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <button class="ml-4 inline-flex  items-center justify-center xs:text-lg  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Conctáctanos
             </button>
           </div>
@@ -68,16 +68,16 @@ export default function Hero() {
             <br class="hidden lg:inline-block" />
             <p>Consultorio</p>
           </h1>
-          <p class="mb-8 leading-relaxed text-white">
+          <p class="mb-8 leading-relaxed text-white text-justify">
             Se logró realizar una parque de locos, creado para cuando crezca la
             piculera emilia valentina poder jugar con la pelota, ginda, muñecas
             o con su catana y dejar a sus primos en paz.
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
+            <button class="inline-flex text-white bg-gray-500 border-0 xs:py-1 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
               Ver Proyecto
             </button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 xs:py-1 xsm:py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Conctáctanos
             </button>
           </div>

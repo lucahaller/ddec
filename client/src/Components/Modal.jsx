@@ -14,7 +14,7 @@ export default function Modal({ open, onClose, images }) {
             <IoIosCloseCircleOutline />
           </button>
         </div>
-        <div className=" rounded-lg shadow-xl  lg:p-28 xl:p-20 xxl:p-20  xs:py-20 xs:p-0 overflow-hidden h-full">
+        <div className=" rounded-lg shadow-xl  lg:p-10  xs:py-20 xs:p-0 overflow-hidden h-full">
           <div className="relative w-full  ">
             <Carousel
               showArrows={true}
@@ -30,7 +30,7 @@ export default function Modal({ open, onClose, images }) {
                 <div key={index} className="w-full max-h-[600px] h-full">
                   <img
                     src={image}
-                    className="w-full    max-h-full object-contain"
+                    className="w-full  xs:h-full  max-h-full object-contain"
                     alt={`Image ${index + 1}`}
                   />
                 </div>

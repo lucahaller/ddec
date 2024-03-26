@@ -87,7 +87,7 @@ export default function Obras() {
   }, [windowWidth]);
 
   return (
-    <div className="  w-full  bg-white ">
+    <div className="  w-full   bg-white ">
       <Slider {...settings}>
         {empresas?.map((e) => (
           <div key={e.name}>
@@ -102,9 +102,9 @@ export default function Obras() {
                 <div className="z-10  group-hover:-translate-y-10 transition-all duration-500 group-hover:text-white">
                   <span className="text-2xl  font-semibold">{e?.name}</span>
                 </div>
-                <div className="w-full  flex items-center justify-center cursor-pointer">
-                  <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                <div className="w-full mt-5 flex items-center justify-center cursor-pointer">
+                  <div className="relative inline-flex items-center justify-start pt-3 pl-4 pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 group-hover:ease-in-out  group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ export default function Obras() {
                     </span>
                     <a
                       href={e.direc}
-                      className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200"
+                      className="relative w-full text-left text-lg group-hover:transition-colors duration-200 group-hover:ease-in-out group-hover:text-white dark:group-hover:text-gray-200"
                     >
                       Ver Proyectos
                     </a>
