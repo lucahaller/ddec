@@ -72,11 +72,11 @@ export default function Content() {
                   Proyectos Casas Privadas
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base xs:text-justify lg:text-left  text-gray-700 md:text-lg">
                   Se realizó la construcción de diversas Casas en diferentes
                   lugares y de manera distinta a las demás, como casas de
                   Barrios en San Rafael, Mendoza , casas en zonas como "El
-                  Nihuil" y Pueblo Benegas
+                  Nihuil" y Pueblo Benegas.
                 </p>
                 <div className="flex flex-row gap-5">
                   <div className=" flex  cursor-pointer">
@@ -159,7 +159,7 @@ export default function Content() {
                   Consultorios Privados
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base xs:text-justify lg:text-left text-gray-700 md:text-lg">
                   Construimos consultorios privados de alta calidad en San
                   Rafael, Mendoza, ofreciendo espacios profesionales
                   excepcionales para el cuidado de la salud.
@@ -223,7 +223,7 @@ export default function Content() {
                   Club De Paleta
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base xs:text-justify lg:text-left   text-gray-700 md:text-lg">
                   Se realizó la construcción de el Club De Paleta en San Rafael,
                   Mendoza para disfrutar de diversas actividades.
                 </p>
@@ -297,7 +297,7 @@ export default function Content() {
               data-aos-anchor-placement="center-bottom"
             >
               <img
-                className="object-cover w-full h-56  rounded shadow-lg sm:h-96"
+                className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
                 src={ImagesDpdR.uno}
                 alt=""
               />
@@ -308,7 +308,7 @@ export default function Content() {
                   Proyectos Departamentos
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base xs:text-justify lg:text-left text-gray-700 md:text-lg">
                   Construimos una variedad de departamentos en ubicaciones
                   estratégicas de la ciudad, incluyendo la Av. Ballofet y Av. J.
                   Roca, ofreciendo viviendas de calidad en lugares
@@ -373,7 +373,7 @@ export default function Content() {
                   Local Av.Ballofet
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base xs:text-justify lg:text-left text-gray-700 md:text-lg">
                   Se realizó la construcción del el Local en la Avenida
                   Ballofet, un espacio comercial moderno y atractivo, diseñado
                   para destacar y ofrecer una experiencia excepcional a

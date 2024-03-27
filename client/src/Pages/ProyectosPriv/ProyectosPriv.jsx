@@ -40,18 +40,18 @@ export default function ProyectosPriv() {
           </div>
           <div className="px-4 py-16 xs:py-28 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="relative max-w-2xl xs:mx-auto  xs:max-w-xl md:max-w-2xl xs:text-center">
-              <h2 className="mb-3 xs:text-3xl font-sans lg:text-4xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+              <h2 className="mb-3 xs:text-4xl  font-sans lg:text-4xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                 PROYECTOS PRIVADOS
                 <br className="hidden md:block" />
-                <p>PROYECTOS REALIZADOS</p>
+                <p>REALIZADOS</p>
               </h2>
-              <p className="mb-6 lg:text-xl font-semibold text-indigo-100 md:text-lg">
+              <p className="mb-6 lg:text-xl text-justify font-semibold text-indigo-100 md:text-lg">
                 En el transcurso de la sección, encontrarás diversos proyectos
                 privados realizados por DDEC, junto con su descripción y tareas
                 realizadas.
               </p>
 
-              <p className="max-w-md mb-10 lg:text-xl tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
+              <p className=" text-justify max-w-md mb-10 lg:text-xl tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
                 Te invito a que las leas y si tienes ganas de realizar algún
                 proyecto parecido no dudes en contactárnos!
               </p>
@@ -64,7 +64,7 @@ export default function ProyectosPriv() {
               <button
                 onClick={() => scrollToSection("proyecto1")}
                 aria-label="Scroll down"
-                className="flex mt-10 items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+                className="flex mt-10 items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-white rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

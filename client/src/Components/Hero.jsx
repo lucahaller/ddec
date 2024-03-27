@@ -15,7 +15,7 @@ export default function Hero() {
   });
 
   return (
-    <div class=" container mx-auto flex px-5  flex-col justify-center  gap-20 items-center">
+    <div class=" xs:pt-10 xs:pb-10 container mx-auto flex px-5  flex-col justify-center  gap-20 items-center">
       <div className="flex flex-col  items-center justify-center h-screen md:flex-row lg:flex-row">
         <div
           data-aos="fade-up-right"
@@ -35,20 +35,24 @@ export default function Hero() {
           class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
         >
           <h1 class="title-font gap-2 sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Parque de los Niños
+            Parque De Los Niños
             <br class="hidden lg:inline-block" />
             <p>San Rafael</p>
           </h1>
           <p class="mb-8 leading-relaxed text-justify text-white">
-            Se logró realizar una parque de locos, creado para cuando crezca la
-            piculera emilia valentina poder jugar con la pelota, ginda, muñecas
-            o con su catana y dejar a sus primos en paz.
+            Construimos el Parque de Los Niños en San Rafael, Mendoza, un
+            espacio recreativo dedicado especialmente a los más pequeños,
+            situado junto a la Plaza Francia, para promover el juego, la
+            diversión y el encuentro familiar.
           </p>
-          <div class="flex justify-center">
-            <button class="inline-flex text-white bg-gray-500 border-0 xs:py-1 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
-              Ver Proyecto
-            </button>
-            <button class="ml-4 inline-flex  items-center justify-center xs:text-lg  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+          <div class="flex justify-center gap-2">
+            <a
+              href="/muni/#parque"
+              class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
+            >
+              Proyecto
+            </a>
+            <button class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Conctáctanos
             </button>
           </div>
@@ -69,15 +73,18 @@ export default function Hero() {
             <p>Consultorio</p>
           </h1>
           <p class="mb-8 leading-relaxed text-white text-justify">
-            Se logró realizar una parque de locos, creado para cuando crezca la
-            piculera emilia valentina poder jugar con la pelota, ginda, muñecas
-            o con su catana y dejar a sus primos en paz.
+            Construimos consultorios privados de alta calidad en San Rafael,
+            Mendoza, ofreciendo espacios profesionales excepcionales para el
+            cuidado de la salud.
           </p>
-          <div class="flex justify-center">
-            <button class="inline-flex text-white bg-gray-500 border-0 xs:py-1 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
-              Ver Proyecto
-            </button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 xs:py-1 xsm:py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+          <div class="flex justify-center gap-2">
+            <a
+              href=""
+              class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
+            >
+              Proyecto
+            </a>
+            <button class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Conctáctanos
             </button>
           </div>
@@ -95,7 +102,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className=" h-screen   flex items-center justify-centerflex-col md:flex-row lg:flex-row">
+      <div className=" flex flex-col  items-center justify-center h-screen md:flex-row lg:flex-row">
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
@@ -117,20 +124,20 @@ export default function Hero() {
             <br class="hidden lg:inline-block" />
             <p>San Rafael</p>
           </h1>
-          <p class="mb-8 leading-relaxed text-white">
+          <p class="mb-8 leading-relaxed text-white text-justify">
             Se realizó la construcción del Paseo Pelegrini, en uno de los
             lugares mas concurridos ubicado en el centro de San Rafael en dónde
             se encuentran gran parte de las tiendas, negocios y heladerías que
             habitan la ciudad.
           </p>
-          <div class="flex justify-center">
+          <div class="flex justify-center gap-2">
             <a
               href="/muni/#pellegrini"
-              class="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
+              class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
             >
-              Ver Proyecto
+              Proyecto
             </a>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <button class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
               Conctáctanos
             </button>
           </div>

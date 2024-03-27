@@ -49,13 +49,13 @@ export default function Content() {
                   Edificio AFIP San Luis
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base  xs:text-justify lg:text-left  text-gray-700 md:text-lg">
                   Se realizó la construcción del edificio principal de AFIP en
                   la ciudad de San Luis, junto con los baños y comedor
                   principales dentro dicho departamento.
                 </p>
                 <div className=" flex  cursor-pointer">
-                  <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                  <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
                     <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                       <svg
@@ -133,12 +133,12 @@ export default function Content() {
                   Cielorrasos AFIP
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base  xs:text-justify lg:text-left  text-gray-700 md:text-lg">
                   Se realizó la construcción de los Cielorrasos pertenecientes a
                   las oficinas de la AFIP San Rafael
                 </p>
                 <div className=" flex  cursor-pointer">
-                  <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                  <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
                     <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                       <svg
@@ -196,12 +196,12 @@ export default function Content() {
                   AFIP San Rafael
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base  xs:text-justify lg:text-left  text-gray-700 md:text-lg">
                   Se realizó la construcción de los baños pertenecientes al
                   edificio de la AFIP en San Rafael, Mendoza
                 </p>
                 <div className=" flex  cursor-pointer">
-                  <div className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                  <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
                     <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                       <svg

@@ -194,8 +194,11 @@ export default function Content() {
                   <br className="hidden md:block" />
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Se realizó la construcción del Paseo Pelegrini, ubicado en el
-                  centro de San Rafael
+                  Construimos el Paseo Pelegrini, un espacio encantador en el
+                  centro de San Rafael, donde se concentran tiendas, heladerías,
+                  jugueterías y otros establecimientos, creando un ambiente
+                  animado y acogedor para disfrutar de compras y
+                  entretenimiento.
                 </p>
                 <div className=" flex  cursor-pointer">
                   <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
@@ -257,8 +260,9 @@ export default function Content() {
                   <br className="hidden md:block" />
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Se realizó la construcción del Parque de Los Niños en San
-                  Rafael, Mendoza, ubicado al lado de la Plaza Francia
+                  Construimos el Parque de los Niños en San Rafael, Mendoza, un
+                  espacio de recreación junto a la Plaza Francia, donde los más
+                  pequeños pueden jugar y aprender.
                 </p>
                 <div className=" flex  cursor-pointer">
                   <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
@@ -840,7 +844,7 @@ export default function Content() {
                   Plaza Rama Caída
                   <br className="hidden md:block" />
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base text-gray-700  md:text-lg">
                   Construimos la Plaza del distrito de Rama Caída, un espacio
                   público vibrante que embellece nuestra comunidad y fomenta la
                   interacción social y el esparcimiento al aire libre.

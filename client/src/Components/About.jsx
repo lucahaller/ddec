@@ -50,7 +50,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className=" flex flex-col items-center justify-center pt-10 lg:mt-0 xl:mt-0 xll:mt-0 ml:mt-80  mt-96">
+      <div className=" flex flex-col items-center justify-center xs:pt-0 pt-10 lg:mt-0 xl:mt-0 xll:mt-0 ml:mt-80 xs:mt-0  mt-96">
         <div
           className=""
           data-aos="fade-up"
