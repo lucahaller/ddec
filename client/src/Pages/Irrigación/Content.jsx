@@ -169,7 +169,7 @@ export default function Content() {
                       </svg>
                     </span>
                     <button
-                      id="comp"
+                      id="compuertas"
                       onClick={(e) => pushdatos(e)}
                       className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-teal-700 dark:group-hover:text-gray-200"
                     >

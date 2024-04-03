@@ -42,13 +42,13 @@ export default function Afip() {
                 <br className="hidden md:block" />
                 <p>PROYECTOS REALIZADOS</p>
               </h2>
-              <p className="mb-6 lg:text-xl text-justify font-semibold text-indigo-100 md:text-lg">
+              <p className="mb-6 lg:text-xl  text-justify   sm:text-center font-semibold text-indigo-100 md:text-lg">
                 En el transcurso de la sección, encontrarás diversos proyectos
                 realizados por DDEC, junto con su descripción y tareas
                 realizadas.
               </p>
 
-              <p className="max-w-md mb-10 lg:text-xl text-justify tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
+              <p className=" mb-10 lg:text-xl text-justify   sm:text-center md:text-lg font-semibold tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
                 Te invito a que las leas y si tienes ganas de realizar algún
                 proyecto parecido no dudes en contactárnos!
               </p>

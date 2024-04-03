@@ -924,7 +924,7 @@ export default function Content() {
                 Loteos, entre otros.
               </p>
             </div>
-            <div class="flex flex-wrap -m-4">
+            <div class="flex flex-wrap -m-4 ">
               <div class="xl:w-1/4 md:w-1/2 p-4">
                 <div class="bg-gray-100 p-6 rounded-lg">
                   <img
@@ -938,7 +938,7 @@ export default function Content() {
                   <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
                     Red Cloacas Av. Sarmiento
                   </h2>
-                  <p class="leading-relaxed text-lg">
+                  <p class="leading-relaxed text-md">
                     Se realizo la construccion de las redes de cloacas de la
                     Avenida Sarmiento
                   </p>
@@ -988,71 +988,76 @@ export default function Content() {
                   </div>
                 </div>
               </div>
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src={ImagesRedSaniamiento.catorce}
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    Redes
-                  </h3>
-                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
-                    Redes de Saniamiento
-                  </h2>
-                  <p class="leading-relaxed text-lg">
-                    Se realizaron las construcciones de diferentes redes de
-                    saniamiento
-                  </p>
-                  <div className=" flex  mt-7 cursor-pointer">
-                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
-                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-gray-400"
+              <div class="xl:w-1/4 md:w-1/2 p-4  ">
+                <div class="bg-gray-100 p-6 rounded-lg h-full flex flex-col justify-between">
+                  <div>
+                    <img
+                      class="h-40 rounded w-full object-cover object-center mb-6"
+                      src={ImagesRedSaniamiento.catorce}
+                      alt="content"
+                    />
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      Redes
+                    </h3>
+                    <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                      Redes de Saniamiento
+                    </h2>
+                    <p class="leading-relaxed text-md">
+                      Se realizaron las construcciones de diferentes redes de
+                      saniamiento
+                    </p>
+                  </div>
+                  <div class="mt-auto">
+                    <div className="cursor-pointer">
+                      <div className="relative inline-flex items-center justify-start py-3 pr-12 overflow-hidden font-semibold text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                        <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"></span>
+                        <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-gray-400"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-sky-700"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <button
+                          id="redsan"
+                          onClick={(e) => pushdatos(e)}
+                          className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
                         >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-sky-700"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <button
-                        id="redsan"
-                        onClick={(e) => pushdatos(e)}
-                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
-                      >
-                        Ver Imágenes
-                      </button>
+                          Ver Imágenes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
+                <div class="bg-gray-100 p-6 rounded-lg h-full">
                   <img
                     class="h-40 rounded w-full object-cover object-center mb-6"
                     src={ImagesEstaciones.uno}
@@ -1064,7 +1069,7 @@ export default function Content() {
                   <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
                     Estaciones Ecológicas San Rafael
                   </h2>
-                  <p class="leading-relaxed text-lg">
+                  <p class="leading-relaxed text-md">
                     Se realizó varias construcciones de las Estaciones
                     Ecológicas situadas en diferentes puntos de la ciudad.
                   </p>
@@ -1115,64 +1120,68 @@ export default function Content() {
                 </div>
               </div>
               <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src={ImagesColector.tres}
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    Colectores
-                  </h3>
-                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
-                    Colector Industrial
-                  </h2>
-                  <p class="leading-relaxed text-lg">
-                    Se realizó la construcción del Colector Industrial de la
-                    ciudad de San Rafael, Mendoza.
-                  </p>
-                  <div className=" flex  cursor-pointer">
-                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
-                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-gray-400"
+                <div class="bg-gray-100 p-6 rounded-lg h-full flex flex-col justify-between">
+                  <div>
+                    <img
+                      class="h-40 rounded w-full object-cover object-center mb-6"
+                      src={ImagesColector.tres}
+                      alt="content"
+                    />
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      Colectores
+                    </h3>
+                    <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                      Colector Industrial
+                    </h2>
+                    <p class="leading-relaxed text-md">
+                      Se realizó la construcción del Colector Industrial de la
+                      ciudad de San Rafael, Mendoza.
+                    </p>
+                  </div>
+                  <div class="mt-auto">
+                    <div className="flex cursor-pointer">
+                      <div className="relative inline-flex items-center justify-start py-3 pr-12 overflow-hidden font-semibold text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                        <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"></span>
+                        <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-gray-400"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-sky-700"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <button
+                          id="colector"
+                          onClick={(e) => pushdatos(e)}
+                          className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
                         >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-sky-700"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <button
-                        id="colector"
-                        onClick={(e) => pushdatos(e)}
-                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
-                      >
-                        Ver Imágenes
-                      </button>
+                          Ver Imágenes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1180,70 +1189,75 @@ export default function Content() {
             </div>
             <div class="flex flex-wrap -m-4">
               <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src={ImagesManKM0.cuatro}
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    Mantenimiento
-                  </h3>
-                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
-                    Mantenimiento del Km0
-                  </h2>
-                  <p class="leading-relaxed text-lg">
-                    Se realizo la construccion y mantenimiento de uno de los
-                    puntos centrales del centro de San Rafael
-                  </p>
-                  <div className=" flex  cursor-pointer">
-                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
-                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-gray-400"
+                <div class="bg-gray-100 p-6 h-full rounded-lg flex flex-col justify-between">
+                  <div>
+                    <img
+                      class="h-40 rounded w-full object-cover object-center mb-6"
+                      src={ImagesManKM0.cuatro}
+                      alt="content"
+                    />
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      Mantenimiento
+                    </h3>
+                    <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                      Mantenimiento del Km0
+                    </h2>
+                    <p class="leading-relaxed text-md">
+                      Se realizo la construccion y mantenimiento de uno de los
+                      puntos centrales del centro de San Rafael
+                    </p>
+                  </div>
+                  <div class="mt-auto">
+                    <div className="flex cursor-pointer">
+                      <div className="relative inline-flex items-center justify-start py-3 pr-12 overflow-hidden font-semibold text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                        <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"></span>
+                        <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-gray-400"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-sky-700"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <button
+                          id="mankm0"
+                          onClick={(e) => pushdatos(e)}
+                          className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
                         >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-sky-700"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <button
-                        id="mankm0"
-                        onClick={(e) => pushdatos(e)}
-                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
-                      >
-                        Ver Imágenes
-                      </button>
+                          Ver Imágenes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
+                <div class="bg-gray-100 p-6 h-full rounded-lg flex flex-col justify-between">
                   <img
                     class="h-40 rounded w-full object-cover object-center mb-6"
                     src={ImagesLoteo.diecisiete}
@@ -1255,120 +1269,130 @@ export default function Content() {
                   <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
                     Urbanización Loteo Procrear
                   </h2>
-                  <p class="leading-relaxed text-lg">
-                    Se realizó las urbanización de los loteos de Procrear
+                  <p class="leading-relaxed text-md">
+                    Urbanización Loteo Procrear Un entorno seguro y moderno con
+                    amplias áreas verdes y servicios de calidad.
                   </p>
-                  <div className=" flex  mt-7 cursor-pointer">
-                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
-                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-gray-400"
+                  <div class="mt-auto">
+                    <div className="flex cursor-pointer">
+                      <div className="relative inline-flex items-center justify-start py-3 pr-12 overflow-hidden font-semibold text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                        <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"></span>
+                        <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-gray-400"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-sky-700"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <button
+                          id="urba"
+                          onClick={(e) => pushdatos(e)}
+                          className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
                         >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-sky-700"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <button
-                        id="urba"
-                        onClick={(e) => pushdatos(e)}
-                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
-                      >
-                        Ver Imágenes
-                      </button>
+                          Ver Imágenes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src={ImagesCasaM.veintisiete}
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    Construcciones
-                  </h3>
-                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
-                    Casa De La Mujer
-                  </h2>
-                  <p class="leading-relaxed text-lg">
-                    Se realizó la construcción de la Casa De La Mujer ubicada en
-                    la Avenida Rivadavia
-                  </p>
-                  <div className="md:mt-7 lg:mt-0 flex  cursor-pointer">
-                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
-                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-gray-400"
+
+              <div class="xl:w-1/4 md:w-1/2 p-4 ">
+                <div class="bg-gray-100 p-6 h-full rounded-lg flex flex-col justify-between">
+                  <div>
+                    <img
+                      class="h-40 rounded w-full object-cover object-center mb-6"
+                      src={ImagesCasaM.veintisiete}
+                      alt="content"
+                    />
+                    <div>
+                      <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                        Construcciones
+                      </h3>
+                      <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                        Casa De La Mujer
+                      </h2>
+                      <p class="leading-relaxed text-md">
+                        Construcción de Casa De La Mujer en Avenida Rivadavia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-auto">
+                    <div className="flex cursor-pointer">
+                      <div className="relative inline-flex items-center justify-start py-3 pr-12 overflow-hidden font-semibold text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                        <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"></span>
+                        <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-gray-400"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            className="w-5 h-5 text-sky-700"
+                          >
+                            <path
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <button
+                          id="casam"
+                          onClick={(e) => pushdatos(e)}
+                          className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
                         >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-sky-700"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <button
-                        id="casam"
-                        onClick={(e) => pushdatos(e)}
-                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
-                      >
-                        Ver Imágenes
-                      </button>
+                          Ver Imágenes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
+                <div class="bg-gray-100 h-full p-6 rounded-lg">
                   <img
                     class="h-40 rounded w-full object-cover object-center mb-6"
                     src={ImagesCentroI.dos}
