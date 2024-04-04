@@ -4,6 +4,7 @@ import { Carousel } from "flowbite-react";
 import park from "../Empresas/Muni/ParqueNiños/9.jpeg";
 import aguatoro from "../Empresas/Pampa/PampaAguaDelToro/2.jpeg";
 import trafo from "../Empresas/Pampa/Base_Transformador_PAMPA/1.jpeg";
+import Typewriter from "./Typewriter";
 export default function HeroInicio() {
   // Lista de imágenes de fondo
   const backgrounds = [`url(${trafo})`, `url(${aguatoro})`, `url(${park})`];
@@ -36,7 +37,7 @@ export default function HeroInicio() {
       <section className="w-full bg-cover bg-center py-32">
         <div className="container h-full mx-auto text-center text-white flex flex-col items-center justify-center">
           <h1 className="text-7xl xs:text-5xl font-bold  mb-6">
-            Empresa Constructora DDEC S.R.L
+            <Typewriter />
           </h1>
           <p className="text-4xl xs:text-3xl mb-12">
             Desarrollo de Estructuras Cíviles de San Rafael,Mendoza

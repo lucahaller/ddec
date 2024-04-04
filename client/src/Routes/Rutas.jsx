@@ -12,8 +12,8 @@ const Rutas = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route exact path={"/"} element={<Project />} />
         <Route element={<Layout />}>
-          <Route exact path={"/"} element={<Project />} />
           <Route exact path={"/afip"} element={<Afip />} />
           <Route exact path={"/irrigación"} element={<Irrigación />} />
           <Route exact path={"/ipv"} element={<Ipv />} />
