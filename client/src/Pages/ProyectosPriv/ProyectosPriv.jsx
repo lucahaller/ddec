@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Content from "./Content";
 
 export default function ProyectosPriv() {
-  window.reload;
   useEffect(() => {
     AOS.init({
       duration: 3000,
@@ -45,13 +44,13 @@ export default function ProyectosPriv() {
                 <br className="hidden md:block" />
                 <p>REALIZADOS</p>
               </h2>
-              <p className="mb-6 lg:text-xl text-justify font-semibold text-indigo-100 md:text-lg">
+              <p className="mb-4 lg:text-xl text-justify sm:text-center font-semibold text-indigo-100 md:text-lg">
                 En el transcurso de la sección, encontrarás diversos proyectos
                 privados realizados por DDEC, junto con su descripción y tareas
                 realizadas.
               </p>
 
-              <p className=" text-justify max-w-md mb-10 lg:text-xl tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
+              <p className=" text-justify max-w-md mb-10 lg:text-xl sm:text-center tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
                 Te invito a que las leas y si tienes ganas de realizar algún
                 proyecto parecido no dudes en contactárnos!
               </p>

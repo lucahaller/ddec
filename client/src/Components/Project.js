@@ -12,6 +12,8 @@ import Loader from "./Loader";
 const Project = () => {
   const [loading, setLoading] = useState(true);
 
+  const projectSectionRef = useRef(null);
+  const projectEyPRef = useRef(null);
   useEffect(() => {
     // Simula un retraso de carga de 2 segundos
     const timer = setTimeout(() => {
@@ -20,40 +22,45 @@ const Project = () => {
 
     // Limpia el temporizador en la limpieza del efecto
     return () => clearTimeout(timer);
-  }, []); // Ejecutar solo una vez al montar el componente
-
+  }, [<HeroInicio />]); // Ejecutar solo una vez al montar el componente
+  useEffect(() => {
+    if (window.location.hash === "#contacto") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (window.location.hash === "#empresasyproyectos") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      projectEyPRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <div class=" overflow-x-hidden ">
-      {loading ? (
-        <div className="h-screen w-full flex items-center justify-center">
-          <Loader />
-        </div> // Renderiza el componente de carga mientras la página está cargando
-      ) : (
-        <>
-          <Nav />
-          <div className="h-screen">
-            <HeroInicio />
-          </div>
-          <section id="about" className="">
-            <About />
-          </section>
-          <section class="text-gray-600    bg-gray-800 body-font ">
-            <Hero />
-          </section>
-          <section
-            id="empresasyproyectos"
-            className="flex flex-col items-center justify-center h-screen "
-          >
-            <h1 className="mt-20 flex text-center items-center font-Kanit justify-center text-bold text-5xl">
-              Empresas & Proyectos
-            </h1>
-            <Obras />
-          </section>
-          <section id="contacto" class="text-gray-600 body-font relative">
-            <Contact />
-          </section>
-        </>
-      )}
+      <div className="h-screen">
+        <HeroInicio />
+      </div>
+      <section id="about" className="">
+        <About />
+      </section>
+      <section class="text-gray-600    bg-gray-800 body-font ">
+        <Hero />
+      </section>
+      <section
+        ref={projectEyPRef}
+        id="empresasyproyectos"
+        className="flex flex-col items-center justify-center h-screen "
+      >
+        <h1 className="mt-20 flex text-center items-center font-Kanit justify-center text-bold text-5xl">
+          Empresas & Proyectos
+        </h1>
+        <Obras />
+      </section>
+      <section
+        ref={projectSectionRef}
+        id="contacto"
+        class="text-gray-600 body-font relative"
+      >
+        <Contact />
+      </section>
     </div>
   );
 };

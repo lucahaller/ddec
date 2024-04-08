@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Modal from "../../Components/Modal";
 import ImagesConsultorio from "../../Empresas/Privados/Casadoro/CONSULTORIO";
 import ImagesBarrio from "../../Empresas/Privados/Casas/CasasDeBarrio";
@@ -14,6 +14,13 @@ import ImagesFedeC from "../../OBRAS/Federico_Cinta";
 import ImagesRodo from "../../OBRAS/ObraPrivAmiga_Rodolfo";
 
 export default function Content() {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === "#consultoriopriv") {
+      projectRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   useEffect(() => {
     AOS.init({
       duration: 3000,
@@ -139,7 +146,8 @@ export default function Content() {
           </div>
         </div>
         <div
-          id="proyecto1"
+          ref={projectRef}
+          id="consultoriopriv"
           className="px-4  h-screen   flex items-center justify-center  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >
           <div className=" grid gap-12 row-gap-8 lg:grid-cols-2 py-16">

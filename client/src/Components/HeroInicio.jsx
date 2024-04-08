@@ -43,7 +43,7 @@ export default function HeroInicio() {
             Desarrollo de Estructuras Cíviles de San Rafael,Mendoza
           </p>
           <a
-            href="#"
+            href="#contacto"
             className="bg-indigo-500 text-white text-xl font-bold py-3 px-10 rounded-xl hover:bg-indigo-600"
           >
             Contáctanos

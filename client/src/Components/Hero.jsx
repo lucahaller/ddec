@@ -52,16 +52,16 @@ export default function Hero() {
             >
               Proyecto
             </a>
-            <button class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a
+              href="/#contacto"
+              class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+            >
               Conctáctanos
-            </button>
+            </a>
           </div>
         </div>
       </div>
-      <div
-        className="flex h-screen items-center justify-center flex-col-reverse md:flex-row lg:flex-row"
-        id="edificio"
-      >
+      <div className="flex h-screen items-center justify-center flex-col-reverse md:flex-row lg:flex-row">
         <div
           data-aos="flip-right"
           data-aos-anchor-placement="center-bottom"
@@ -79,14 +79,17 @@ export default function Hero() {
           </p>
           <div class="flex justify-center gap-2">
             <a
-              href=""
+              href="/proyectospriv/#consultoriopriv"
               class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
             >
               Proyecto
             </a>
-            <button class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a
+              href="/#contacto"
+              class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+            >
               Conctáctanos
-            </button>
+            </a>
           </div>
         </div>
         <div
@@ -132,14 +135,17 @@ export default function Hero() {
           </p>
           <div class="flex justify-center gap-2">
             <a
-              href="/muni/#pellegrini"
+              href="/muni#pellegrini"
               class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
             >
               Proyecto
             </a>
-            <button class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a
+              href="/#contacto"
+              class=" inline-flex  items-center justify-center xs:text-lg xs:px-4  text-gray-700 bg-gray-100 border-0 xs:py-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+            >
               Conctáctanos
-            </button>
+            </a>
           </div>
         </div>
       </div>

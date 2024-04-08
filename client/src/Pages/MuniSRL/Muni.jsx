@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Content from "./Content";
 
 export default function Muni() {
-  window.reload;
   useEffect(() => {
     AOS.init({
       duration: 3000,

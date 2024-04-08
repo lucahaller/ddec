@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button } from "flowbite-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Modal from "../../Components/Modal";
 import ImagesBiblioteca from "../../Empresas/Muni/BibliotecaMMoreno";
 import ImagesCanchaH from "../../Empresas/Muni/Cancha_Hockey";
@@ -23,6 +23,19 @@ import ImagesRedSar from "../../Empresas/Muni/Red de ClocaCsarmiento";
 import ImagesRedSaniamiento from "../../Empresas/Muni/ReddeCloaca";
 import ImagesLoteo from "../../Empresas/Muni/Urba Loteo Ptocrear/Fotos";
 export default function Content() {
+  const projectSectionRef = useRef(null);
+  const projectParqueRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === "#pellegrini") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (window.location.hash === "#parque") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      projectParqueRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   useEffect(() => {
     AOS.init({
       duration: 3000,
@@ -173,6 +186,7 @@ export default function Content() {
           </div>
         </div>
         <div
+          ref={projectSectionRef}
           id="pellegrini"
           className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >
@@ -249,6 +263,7 @@ export default function Content() {
           </div>
         </div>
         <div
+          ref={projectParqueRef}
           id="parque"
           className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >
