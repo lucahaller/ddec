@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Typewriter = () => {
-  const words = ["Empresa Constructora DDEC S.R.L"];
+  const words = ["Empresa Constructora DDEC S.R.L", "_"];
   const [currentWord, setCurrentWord] = useState("");
 
   useEffect(() => {

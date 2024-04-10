@@ -14,13 +14,15 @@ const Rutas = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simula un retraso de carga de 2 segundos
-    const timer = setTimeout(() => {
+    const handleLoad = () => {
       setLoading(false);
-    }, 2000);
+    };
 
-    // Limpia el temporizador en la limpieza del efecto
-    return () => clearTimeout(timer);
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []); // Ejecutar solo una vez al montar el componente
   return (
     <BrowserRouter>
