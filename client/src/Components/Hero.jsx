@@ -21,7 +21,7 @@ export default function Hero() {
           data-aos="fade-up-right"
           dat
           a-aos-anchor-placement="center-bottom"
-          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-2/5"
+          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -65,7 +65,7 @@ export default function Hero() {
         <div
           data-aos="flip-right"
           data-aos-anchor-placement="center-bottom"
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
+          class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
         >
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Proyecto Privado
@@ -95,7 +95,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-2/5"
+          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -109,7 +109,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-2/5"
+          class="shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "

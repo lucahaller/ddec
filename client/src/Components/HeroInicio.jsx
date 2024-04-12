@@ -39,12 +39,19 @@ export default function HeroInicio() {
           <h1 className="text-7xl xs:text-6xl font-bold  mb-6">
             <Typewriter />
           </h1>
-          <p className="text-4xl xs:text-3xl mb-12">
+          <p className="text-3xl xs:text-3xl mb-12">
             Desarrollo de Estructuras Cíviles de San Rafael,Mendoza
           </p>
-          <a
+          {/* <a
             href="#contacto"
             className="bg-indigo-500 text-white text-xl font-bold py-3 px-10 rounded-xl hover:bg-indigo-600"
+          >
+            Contáctanos
+          </a> */}
+          <a
+            href="#contacto"
+            class="relative px-10 py-2 rounded-lg text-lg isolation-auto z-10  border-indigo-500
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-700  bg-indigo-500 hover:text-white text-white font-bold before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
           >
             Contáctanos
           </a>

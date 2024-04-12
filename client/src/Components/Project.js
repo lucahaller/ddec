@@ -13,6 +13,7 @@ const Project = () => {
 
   const projectSectionRef = useRef(null);
   const projectEyPRef = useRef(null);
+  const about = useRef(null);
   useEffect(() => {
     // Simula un retraso de carga de 2 segundos
     const timer = setTimeout(() => {
@@ -31,13 +32,17 @@ const Project = () => {
       // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
       projectEyPRef.current.scrollIntoView({ behavior: "smooth" });
     }
+    if (window.location.hash === "#about") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      about.current.scrollIntoView({ behavior: "smooth" });
+    }
   }, []);
   return (
     <div class=" overflow-x-hidden ">
       <div className="h-screen">
         <HeroInicio />
       </div>
-      <section id="about" className="">
+      <section ref={about} id="about" className="">
         <About />
       </section>
       <section class="text-gray-600    bg-gray-800 body-font ">

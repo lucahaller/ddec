@@ -34,7 +34,7 @@ const Typewriter = () => {
 
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <h1 id="typewriter" className="text-6xl font-bold">
+      <h1 id="typewriter" className="text-5xl  font-bold">
         {currentWord}
       </h1>
     </div>
