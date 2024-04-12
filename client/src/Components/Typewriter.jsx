@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Typewriter = () => {
-  const words = ["Empresa Constructora DDEC S.R.L", "_"];
+  const words = ["Empresa Constructora DDEC S.R.L"];
   const [currentWord, setCurrentWord] = useState("");
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Typewriter = () => {
 
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <h1 id="typewriter" className="text-4xl font-bold">
+      <h1 id="typewriter" className="text-6xl font-bold">
         {currentWord}
       </h1>
     </div>

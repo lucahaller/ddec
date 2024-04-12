@@ -7,7 +7,6 @@ import HeroInicio from "./HeroInicio";
 import Nav from "./Nav";
 import About from "./About";
 import Contact from "./Contact";
-import Loader from "./Loader";
 
 const Project = () => {
   const [loading, setLoading] = useState(true);
