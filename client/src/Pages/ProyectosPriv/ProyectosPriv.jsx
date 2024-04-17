@@ -61,7 +61,7 @@ export default function ProyectosPriv() {
                 Contáctanos
               </a>
               <button
-                onClick={() => scrollToSection("proyecto1")}
+                onClick={() => scrollToSection("casaspriv")}
                 aria-label="Scroll down"
                 className="flex mt-10 items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-white rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
               >

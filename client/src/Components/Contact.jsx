@@ -184,12 +184,18 @@ export default function Contact() {
           )}
           <button
             type="submit"
-            className="text-white w-full bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg "
+            className="w-full relative px-10 py-2 rounded-lg text-lg isolation-auto z-10  border-indigo-500
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  before:bg-indigo-700  bg-indigo-500 hover:text-white text-white font-bold before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 "
             disabled={isSending} // Deshabilita el botón mientras se envía el mensaje
           >
             {isSending ? (
-              <div class="flex-col gap-4 py-2 w-full flex items-center justify-center">
-                <div class="w-5 h-5 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full"></div>
+              <div
+                role="status"
+                class="inline-block h-5 w-5 mr-2 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+              >
+                <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+                  Enviando...
+                </span>
               </div>
             ) : (
               "Enviar Mensaje"
@@ -201,7 +207,8 @@ export default function Contact() {
             </p>
             <button
               onClick={handleWsp}
-              className="flex flex-row items-center justify-center text-white w-full bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              className="w-full flex flex-row  items-center justify-center relative px-2 py-2 rounded-lg text-lg isolation-auto z-10  border-green-500
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  before:bg-green-700  bg-green-500 hover:text-white text-white font-bold before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
             >
               Enviar Mensaje por WhatsApp{" "}
               <FaWhatsapp className="ml-3 text-3xl" />

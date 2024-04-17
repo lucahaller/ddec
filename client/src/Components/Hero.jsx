@@ -1,5 +1,5 @@
 import parque from "../Empresas/Muni/ParqueNiños/7.jpeg";
-import edificio from "../Empresas/Privados/Casadoro/CONSULTORIO/edificio.jpg";
+import edificio from "../Empresas/Muni/BibliotecaMMoreno/12.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -68,18 +68,18 @@ export default function Hero() {
           class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
         >
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Proyecto Privado
+            Biblioteca Mariano Moreno
             <br class="hidden lg:inline-block" />
-            <p>Consultorio</p>
+            <p>San Rafael</p>
           </h1>
           <p class="mb-8 leading-relaxed text-white text-justify">
-            Construimos consultorios privados de alta calidad en San Rafael,
-            Mendoza, ofreciendo espacios profesionales excepcionales para el
-            cuidado de la salud.
+            Construimos la Biblioteca Mariano Moreno, un espacio cultural
+            emblemático que enriquece nuestra comunidad con conocimiento y
+            oportunidades educativas.
           </p>
           <div class="flex justify-center gap-2">
             <a
-              href="/proyectospriv/#consultoriopriv"
+              href="/muni/#bmoreno"
               class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
             >
               Proyecto

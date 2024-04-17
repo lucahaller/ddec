@@ -25,6 +25,7 @@ import ImagesLoteo from "../../Empresas/Muni/Urba Loteo Ptocrear/Fotos";
 export default function Content() {
   const projectSectionRef = useRef(null);
   const projectParqueRef = useRef(null);
+  const projectBmRef = useRef(null);
 
   useEffect(() => {
     if (window.location.hash === "#pellegrini") {
@@ -34,6 +35,10 @@ export default function Content() {
     if (window.location.hash === "#parque") {
       // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
       projectParqueRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (window.location.hash === "#bmoreno") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      projectBmRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
   useEffect(() => {
@@ -629,6 +634,7 @@ export default function Content() {
           </div>
         </div>
         <div
+          ref={projectBmRef}
           id="bmoreno"
           className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >

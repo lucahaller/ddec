@@ -17,7 +17,7 @@ export default function Content() {
   const projectRef = useRef(null);
 
   useEffect(() => {
-    if (window.location.hash === "#consultoriopriv") {
+    if (window.location.hash === "#consultorio") {
       projectRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
@@ -69,7 +69,7 @@ export default function Content() {
     <div>
       <div>
         <div
-          id="proyecto2"
+          id="casaspriv"
           className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >
           <div className="lg:grid gap-12 xs:flex xs:flex-col-reverse lg:row-gap-8 lg:grid-cols-2">
@@ -147,7 +147,7 @@ export default function Content() {
         </div>
         <div
           ref={projectRef}
-          id="consultoriopriv"
+          id="consultorio"
           className="px-4  h-screen   flex items-center justify-center  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >
           <div className=" grid gap-12 row-gap-8 lg:grid-cols-2 py-16">

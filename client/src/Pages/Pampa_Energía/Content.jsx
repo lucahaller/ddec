@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Modal from "../../Components/Modal";
 import Images from "../../Empresas/Afip/CIELORRASOS_SR/Index";
 import ImagesSanLuis from "../../Empresas/Afip/AFIP_SAN_LUIS/Index";
@@ -13,6 +13,14 @@ import ImagesToro from "../../Empresas/Pampa/PampaAguaDelToro";
 import ImagesDique from "../../Empresas/Pampa/Reparación Dique Aisol";
 
 export default function Content() {
+  const projectPampRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === "#basepampa") {
+      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
+      projectPampRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   useEffect(() => {
     AOS.init({
       duration: 3000,
@@ -46,7 +54,8 @@ export default function Content() {
     <div>
       <div>
         <div
-          id="proyecto2"
+          ref={projectPampRef}
+          id="basepampa"
           className="px-4 h-screen flex items-center justify-center py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
         >
           <div className="lg:grid gap-12 xs:flex xs:flex-col-reverse lg:row-gap-8 lg:grid-cols-2">
@@ -204,7 +213,9 @@ export default function Content() {
                   <br className="hidden md:block" />
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Se realizó la construcción de Pampa Agua del Toro
+                  Construimos Pampa Agua del Toro, un proyecto destacado que
+                  demuestra nuestra capacidad para crear espacios funcionales y
+                  de calidad en la región.
                 </p>
                 <div className=" flex  cursor-pointer">
                   <div className="relative inline-flex items-center justify-start py-3 pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
