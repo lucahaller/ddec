@@ -12,10 +12,10 @@ export default function Foot() {
   return (
     <Footer container>
       <div className="w-full text-center">
-        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
+        <div className="w-full justify-between sm:flex sm:items-center  sm:justify-between">
           <img className="w-auto h-20 pb-0" src={logo} />
 
-          <Footer.LinkGroup>
+          <Footer.LinkGroup className="xs:gap-5">
             <Footer.Link href="#about">Sobre Nosotros</Footer.Link>
             <Footer.Link href="https://www.facebook.com/DDEC.Constructora/?locale=es_LA">
               Página Facebook

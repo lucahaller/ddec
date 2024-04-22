@@ -21,7 +21,7 @@ export default function Hero() {
           data-aos="fade-up-right"
           dat
           a-aos-anchor-placement="center-bottom"
-          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-3/6"
+          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:h-2/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -95,7 +95,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-3/6"
+          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  xs:h-2/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -109,7 +109,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  mb-10 md:mb-0 h-3/6"
+          class="shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  xs:h-2/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
