@@ -21,7 +21,7 @@ export default function Hero() {
           data-aos="fade-up-right"
           dat
           a-aos-anchor-placement="center-bottom"
-          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:h-2/6 mb-10 md:mb-0 sm:h-3/6"
+          class=" shadow-lg shadow-gray-400 xs:w-full rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -61,11 +61,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen items-center justify-center flex-col-reverse md:flex-row lg:flex-row">
+      <div className="flex h-screen  items-center justify-center flex-col-reverse md:flex-row lg:flex-row">
         <div
           data-aos="flip-right"
           data-aos-anchor-placement="center-bottom"
-          class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
+          class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
         >
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Biblioteca Mariano Moreno
@@ -95,7 +95,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  xs:h-2/6 mb-10 md:mb-0 sm:h-3/6"
+          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:w-full xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -105,11 +105,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className=" flex flex-col  items-center justify-center h-screen md:flex-row lg:flex-row">
+      <div className=" flex flex-col  items-center  justify-center h-screen md:flex-row lg:flex-row">
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  xs:h-2/6 mb-10 md:mb-0 sm:h-3/6"
+          class="shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  xs:w-full xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
