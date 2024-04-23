@@ -9,47 +9,18 @@ import About from "./About";
 import Contact from "./Contact";
 
 const Project = () => {
-  const [loading, setLoading] = useState(true);
-
-  const projectSectionRef = useRef(null);
-  const projectEyPRef = useRef(null);
-  const about = useRef(null);
-  useEffect(() => {
-    // Simula un retraso de carga de 2 segundos
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    // Limpia el temporizador en la limpieza del efecto
-    return () => clearTimeout(timer);
-  }, [<HeroInicio />]); // Ejecutar solo una vez al montar el componente
-  useEffect(() => {
-    if (window.location.hash === "#contacto") {
-      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
-      projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-    if (window.location.hash === "#empresasyproyectos") {
-      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
-      projectEyPRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-    if (window.location.hash === "#about") {
-      // Si la URL tiene el hash '#proyectosection', desplázate a esa sección
-      about.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
   return (
     <div class=" overflow-x-hidden ">
       <div className="h-screen">
         <HeroInicio />
       </div>
-      <section ref={about} id="about" className="">
+      <section id="about" className="">
         <About />
       </section>
       <section class="text-gray-600    bg-gray-800 body-font ">
         <Hero />
       </section>
       <section
-        ref={projectEyPRef}
         id="empresasyproyectos"
         className="flex flex-col items-center justify-center h-screen "
       >
@@ -58,11 +29,7 @@ const Project = () => {
         </h1>
         <Obras />
       </section>
-      <section
-        ref={projectSectionRef}
-        id="contacto"
-        class="text-gray-600 body-font relative"
-      >
+      <section id="contacto" class="text-gray-600 body-font relative">
         <Contact />
       </section>
     </div>
