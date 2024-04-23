@@ -11,36 +11,20 @@ import { useEffect, useState } from "react";
 import Loader from "../Components/Loader";
 
 const Rutas = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []); // Ejecutar solo una vez al montar el componente
+  // Ejecutar solo una vez al montar el componente
   return (
     <BrowserRouter>
-      {loading ? (
-        <Loader /> // Renderiza el componente de carga mientras la aplicación se está inicializando
-      ) : (
-        <Routes>
-          <Route element={<Layout />}>
-            <Route exact path={"/"} element={<Project />} />
-            <Route exact path={"/afip"} element={<Afip />} />
-            <Route exact path={"/irrigación"} element={<Irrigación />} />
-            <Route exact path={"/ipv"} element={<Ipv />} />
-            <Route exact path={"/muni"} element={<Muni />} />
-            <Route exact path={"/pampaenergía"} element={<Pampa />} />
-            <Route exact path={"/proyectospriv"} element={<ProyectosPriv />} />
-          </Route>
-        </Routes>
-      )}
+      <Routes>
+        <Route element={<Layout />}>
+          <Route exact path={"/"} element={<Project />} />
+          <Route exact path={"/afip"} element={<Afip />} />
+          <Route exact path={"/irrigación"} element={<Irrigación />} />
+          <Route exact path={"/ipv"} element={<Ipv />} />
+          <Route exact path={"/muni"} element={<Muni />} />
+          <Route exact path={"/pampaenergía"} element={<Pampa />} />
+          <Route exact path={"/proyectospriv"} element={<ProyectosPriv />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };
