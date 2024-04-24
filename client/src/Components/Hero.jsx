@@ -1,5 +1,5 @@
 import parque from "../Empresas/Muni/ParqueNiños/7.jpeg";
-import edificio from "../Empresas/Muni/BibliotecaMMoreno/12.jpg";
+import edificio from "../Empresas/Afip/AFIP_SAN_LUIS/esquina.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -68,18 +68,18 @@ export default function Hero() {
           class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
         >
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Biblioteca Mariano Moreno
+            Edificio Afip
             <br class="hidden lg:inline-block" />
-            <p>San Rafael</p>
+            <p>San Luis</p>
           </h1>
           <p class="mb-8 leading-relaxed text-white text-justify">
-            Construimos la Biblioteca Mariano Moreno, un espacio cultural
-            emblemático que enriquece nuestra comunidad con conocimiento y
-            oportunidades educativas.
+            "Construimos el edificio principal de AFIP en la ciudad de San Luis,
+            incluyendo los baños y comedor principales, reafirmando nuestro
+            compromiso con la excelencia en proyectos de infraestructura."
           </p>
           <div class="flex justify-center gap-2">
             <a
-              href="/muni/#bmoreno"
+              href="/afip/#afip"
               class="inline-flex text-white bg-gray-500 border-0 xs:py-4 xsm:py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
             >
               Proyecto
