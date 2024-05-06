@@ -1,7 +1,7 @@
 import uno from "../PaseoPelegrini/1.jpg";
 import dos from "../PaseoPelegrini/2.jpg";
 import tres from "../PaseoPelegrini/3.jpg";
-import cuatro from "../PaseoPelegrini/4.jpg";
+
 import cinco from "../PaseoPelegrini/5.jpg";
 import seis from "../PaseoPelegrini/8.jpg";
 import siete from "../PaseoPelegrini/9.jpg";
@@ -14,7 +14,7 @@ const ImagesPelegrini = {
   dos,
   uno,
   tres,
-  cuatro,
+
   cinco,
   seis,
   siete,
