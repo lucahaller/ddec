@@ -18,17 +18,22 @@ export default function About() {
       <div className="flex flex-col  pt-20 ">
         <div className="flex  lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
           <div className="w-full lg:w-6/12">
-            <h2 className="w-full flex flex-row font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">
-              Sobre la Empresa
-              <FcAbout className="bg-gray ml-2 pb-2" />
-            </h2>
-            <p className="text-justify font-normal  text-base leading-6 text-gray-600 mt-6">
-              Somos una empresa constructora en San Rafael, Mendoza,
-              especializada en obras públicas y privadas. Con un enfoque
-              meticuloso y atención personalizada, entregamos proyectos de alta
-              calidad. Nuestra pasión es construir un futuro sólido para nuestra
-              comunidad.
-            </p>
+            <div
+              data-aos="fade-right"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <h2 className="w-full flex flex-row font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">
+                Sobre la Empresa
+                <FcAbout className="bg-gray ml-2 pb-2" />
+              </h2>
+              <p className="text-justify font-normal  text-base leading-6 text-gray-600 mt-6">
+                Somos una empresa constructora en San Rafael, Mendoza,
+                especializada en obras públicas y privadas. Con un enfoque
+                meticuloso y atención personalizada, entregamos proyectos de
+                alta calidad. Nuestra pasión es construir un futuro sólido para
+                nuestra comunidad.
+              </p>
+            </div>
             <div
               className="w-full "
               data-aos="fade-up-right"

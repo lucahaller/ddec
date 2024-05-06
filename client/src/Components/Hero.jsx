@@ -40,10 +40,10 @@ export default function Hero() {
             <p>San Rafael</p>
           </h1>
           <p class="mb-8 leading-relaxed text-justify text-white">
-            Construimos el Parque de Los Niños en San Rafael, Mendoza, un
-            espacio recreativo dedicado especialmente a los más pequeños,
-            situado junto a la Plaza Francia, para promover el juego, la
-            diversión y el encuentro familiar.
+            Realizamos la remodelación y mantenimiento, de el Parque de Los
+            Niños en San Rafael, Mendoza, un espacio recreativo dedicado
+            especialmente a los más pequeños, situado junto a la Plaza Francia,
+            para promover el juego, la diversión y el encuentro familiar.
           </p>
           <div class="flex justify-center gap-2">
             <a
@@ -73,9 +73,10 @@ export default function Hero() {
             <p>San Luis</p>
           </h1>
           <p class="mb-8 leading-relaxed text-white text-justify">
-            "Construimos el edificio principal de AFIP en la ciudad de San Luis,
-            incluyendo los baños y comedor principales, reafirmando nuestro
-            compromiso con la excelencia en proyectos de infraestructura."
+            Realizamos la remodelación y mantenimiento de el edificio principal
+            de AFIP en la ciudad de San Luis, incluyendo los baños y comedor
+            principales, reafirmando nuestro compromiso con la excelencia en
+            proyectos de infraestructura.
           </p>
           <div class="flex justify-center gap-2">
             <a

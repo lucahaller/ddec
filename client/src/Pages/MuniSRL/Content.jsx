@@ -280,9 +280,10 @@ export default function Content() {
                   <br className="hidden md:block" />
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Construimos el Parque de los Niños en San Rafael, Mendoza, un
-                  espacio de recreación junto a la Plaza Francia, donde los más
-                  pequeños pueden jugar y aprender.
+                  Se realizó la remodelación y mantenimiento de el Parque de los
+                  Niños en San Rafael, Mendoza, un espacio de recreación junto a
+                  la Plaza Francia, donde los más pequeños pueden jugar y
+                  aprender.
                 </p>
                 <div className=" flex  cursor-pointer">
                   <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
