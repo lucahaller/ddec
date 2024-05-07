@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import { FaWhatsapp } from "react-icons/fa";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
   const MySwal = withReactContent(Swal);
@@ -89,15 +91,25 @@ export default function Contact() {
     // Abre el enlace en una nueva ventana o pestaña
     window.open(whatsappLink);
   };
+  useEffect(() => {
+    AOS.init({
+      delay: 200,
+      once: true,
+    });
+  });
 
   return (
     <div className="container pt-28 px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-      <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <div
+        data-aos="flip-up"
+        data-aos-duration="8000"
+        className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13132.756924010437!2d-68.357029!3d-34.624658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96790804fa74a00b%3A0x769becf03eb818ad!2sDDEC%20%7C%20Desarrollo%20De%20Estructuras%20Civiles%20SRL.!5e0!3m2!1ses!2sar!4v1708958470281!5m2!1ses!2sar"
           width="100%"
           height="100%"
-          className="absolute inset-0"
+          className="absolute h-full inset-0"
           frameBorder="0"
           title="map"
           marginHeight="0"
@@ -131,15 +143,21 @@ export default function Contact() {
         </div>
       </div>
       <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-        <h2 className="text-gray-900 text-4xl mb-1 font-medium title-font">
-          Contáctanos
-        </h2>
-        <p className="leading-relaxed mb-5 text-gray-600">
-          Déjanos un mensaje y nos pondremos en contacto contigo lo antes
-          posible
-        </p>
+        <div data-aos="zoom-out-left">
+          <h2 className="text-gray-900 text-4xl mb-1 font-medium title-font">
+            Contáctanos
+          </h2>
+          <p className="leading-relaxed mb-5 text-gray-600">
+            Déjanos un mensaje y nos pondremos en contacto contigo lo antes
+            posible
+          </p>
+        </div>
         <form onSubmit={handleSubmit}>
-          <div className="relative mb-4">
+          <div
+            className="relative mb-4"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <label htmlFor="name" className="leading-7 text-sm text-gray-600">
               Nombre
             </label>
@@ -151,7 +169,11 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <div className="relative mb-4">
+          <div
+            className="relative mb-4"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <label htmlFor="email" className="leading-7 text-sm text-gray-600">
               Email
             </label>
@@ -163,7 +185,11 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <div className="relative mb-4">
+          <div
+            className="relative mb-4"
+            data-aos="fade-left"
+            data-aos-duration="5000"
+          >
             <label
               htmlFor="message"
               className="leading-7 text-sm text-gray-600"
@@ -183,6 +209,8 @@ export default function Contact() {
             </p>
           )}
           <button
+            data-aos="fade-up-right"
+            data-aos-duration="4000"
             type="submit"
             className="w-full relative px-10 py-2 rounded-lg text-lg isolation-auto z-10  border-indigo-500
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  before:bg-indigo-700  bg-indigo-500 hover:text-white text-white font-bold before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 "
@@ -201,13 +229,15 @@ export default function Contact() {
               "Enviar Mensaje"
             )}
           </button>
-          <div className="flex flex-col items-center justify-center">
-            <p className="text-lg text-gray-500 font-semibold flex items-center">
-              O
-            </p>
+          <div
+            className="flex flex-col items-center justify-center"
+            data-aos="fade-up-left"
+            data-aos-duration="4000"
+          >
+            <p className="text-lg text-gray-500 font-semibold flex items-center"></p>
             <button
               onClick={handleWsp}
-              className="w-full flex flex-row  items-center justify-center relative px-2 py-2 rounded-lg text-lg isolation-auto z-10  border-green-500
+              className=" mt-5 w-full flex flex-row  items-center justify-center relative px-2 py-2 rounded-lg text-lg isolation-auto z-10  border-green-500
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  before:bg-green-700  bg-green-500 hover:text-white text-white font-bold before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
             >
               Enviar Mensaje por WhatsApp{" "}

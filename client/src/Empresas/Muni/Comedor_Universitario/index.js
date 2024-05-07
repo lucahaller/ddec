@@ -22,6 +22,12 @@ import veintiuno from "../Comedor_Universitario/32.jpg";
 import veintidos from "../Comedor_Universitario/33.jpg";
 import veintitres from "../Comedor_Universitario/34.jpg";
 import veinticuatro from "../Comedor_Universitario/35.jpg";
+import veinticinco from "../Comedor_Universitario/36.jpg";
+import veintiseis from "../Comedor_Universitario/37.jpg";
+import veintisiete from "../Comedor_Universitario/38.jpg";
+import veintiocho from "../Comedor_Universitario/39.jpg";
+import veintinueve from "../Comedor_Universitario/40.jpg";
+import treinta from "../Comedor_Universitario/41.jpg";
 
 const ImagesComedorUni = {
   uno,
@@ -48,5 +54,11 @@ const ImagesComedorUni = {
   veintidos,
   veintitres,
   veinticuatro,
+  veinticinco,
+  veintiseis,
+  veintisiete,
+  veintiocho,
+  veintinueve,
+  treinta,
 };
 export default ImagesComedorUni;

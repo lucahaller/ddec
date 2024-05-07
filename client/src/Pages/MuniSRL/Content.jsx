@@ -499,7 +499,7 @@ export default function Content() {
             >
               <img
                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                src={ImagesComedorUni.siete}
+                src={ImagesComedorUni.veintiocho}
                 alt=""
               />
             </div>
@@ -657,9 +657,9 @@ export default function Content() {
                   <br className="hidden md:block" />
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Construimos la Biblioteca Mariano Moreno, un espacio cultural
-                  emblemático que enriquece nuestra comunidad con conocimiento y
-                  oportunidades educativas.
+                  Construcción del techo y parasoles de la Biblioteca Mariano
+                  Moreno, un espacio cultural emblemático que enriquece nuestra
+                  comunidad con conocimiento y oportunidades educativas.
                 </p>
                 <div className=" flex  cursor-pointer">
                   <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">

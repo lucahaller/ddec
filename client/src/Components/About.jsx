@@ -87,7 +87,7 @@ export default function About() {
               {/* <!-- Team Card --> */}
               <div
                 className="flex p-4 shadow-md"
-                data-aos="fade-left"
+                data-aos="fade-down-right"
                 data-aos-anchor-placement="center-bottom"
                 data-aos-duration="1500"
               >
@@ -111,7 +111,7 @@ export default function About() {
               {/* <!-- Board Card --> */}
               <div
                 className="flex p-4 shadow-md"
-                data-aos="fade-left"
+                data-aos="fade-up-left"
                 data-aos-anchor-placement="center-bottom"
                 data-aos-duration="2000"
               >

@@ -17,7 +17,7 @@ const Project = () => {
       <section id="about" className="">
         <About />
       </section>
-      <section class="text-gray-600    bg-gray-800 body-font ">
+      <section class="text-gray-600    bg-gray-800  bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]body-font ">
         <Hero />
       </section>
       <section
