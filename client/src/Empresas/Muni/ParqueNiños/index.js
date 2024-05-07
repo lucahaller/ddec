@@ -20,8 +20,6 @@ import veinte2 from "../ParqueNiños/22.jpeg";
 import veinte3 from "../ParqueNiños/23.jpeg";
 
 const ImagesParque = {
-  uno,
-  dos,
   tres,
   cuatro,
   cinco,
@@ -35,7 +33,6 @@ const ImagesParque = {
   trece,
   catorce,
   quince,
-  diez6,
   diez7,
   diez8,
   diez9,
