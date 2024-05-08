@@ -1,4 +1,3 @@
-import uno from "../Plaza_Rama_Caída/1.jpeg";
 import dos from "../Plaza_Rama_Caída/2.jpeg";
 import tres from "../Plaza_Rama_Caída/3.jpeg";
 import cuatro from "../Plaza_Rama_Caída/4.jpeg";
@@ -14,7 +13,6 @@ import trece from "../Plaza_Rama_Caída/13.jpeg";
 import catorce from "../Plaza_Rama_Caída/14.jpeg";
 
 const ImagesPlazaRama = {
-  uno,
   dos,
   tres,
   cuatro,

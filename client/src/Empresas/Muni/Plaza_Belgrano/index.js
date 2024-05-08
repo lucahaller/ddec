@@ -6,6 +6,7 @@ import cinco from "../Plaza_Belgrano/5.jpeg";
 import seis from "../Plaza_Belgrano/6.jpeg";
 import siete from "../Plaza_Belgrano/7.jpeg";
 import ocho from "../Plaza_Belgrano/8.jpeg";
+import term1 from "../Plaza_Belgrano/term1.jpg";
 
 const ImagesPlazaB = {
   uno,
@@ -16,5 +17,6 @@ const ImagesPlazaB = {
   seis,
   siete,
   ocho,
+  term1,
 };
 export default ImagesPlazaB;

@@ -87,11 +87,12 @@ export default function Content() {
     if (e.target.id === "plazarama") {
       setImagenes(Object.values(ImagesPlazaRama));
     }
-    if (e.target.id === "redsar") {
-      setImagenes(Object.values(ImagesRedSar));
-    }
+
     if (e.target.id === "redsan") {
-      setImagenes(Object.values(ImagesRedSaniamiento));
+      const redsar = Object.values(ImagesRedSar);
+      const redsan = Object.values(ImagesRedSaniamiento);
+      const redes = [...redsar, ...redsan];
+      setImagenes(redes);
     }
     if (e.target.id === "estacion") {
       setImagenes(Object.values(ImagesEstaciones));
@@ -354,7 +355,7 @@ export default function Content() {
             >
               <img
                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                src={ImagesPlazaRosas.diez}
+                src={ImagesPlazaRosas.veinte5}
                 alt=""
               />
             </div>
@@ -948,7 +949,7 @@ export default function Content() {
             </div>
             <div class="flex flex-wrap -m-4 ">
               <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
+                {/* <div class="bg-gray-100 p-6 rounded-lg">
                   <img
                     class="h-40 rounded w-full object-cover object-center mb-6"
                     src={ImagesRedSar.cuatro}
@@ -1001,6 +1002,66 @@ export default function Content() {
                       </span>
                       <button
                         id="redsar"
+                        onClick={(e) => pushdatos(e)}
+                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
+                      >
+                        Ver Imágenes
+                      </button>
+                    </div>
+                  </div>
+                </div> */}
+                <div class="bg-gray-100 h-full p-6 rounded-lg">
+                  <img
+                    class="h-40 rounded w-full object-cover object-center mb-6"
+                    src={ImagesCentroI.dos}
+                    alt="content"
+                  />
+                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    Centros Integradores
+                  </h3>
+                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
+                    Centro Integrador Comunitario
+                  </h2>
+                  <p class="leading-relaxed text-lg">
+                    Se realizó la construcción del Centro Integrador Comunitario
+                  </p>
+                  <div className="mt-7 flex  cursor-pointer">
+                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
+                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
+                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-gray-400"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          fill="none"
+                          className="w-5 h-5 text-sky-700"
+                        >
+                          <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <button
+                        id="cic"
                         onClick={(e) => pushdatos(e)}
                         className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
                       >
@@ -1413,68 +1474,7 @@ export default function Content() {
                 </div>
               </div>
 
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 h-full p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src={ImagesCentroI.dos}
-                    alt="content"
-                  />
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    Centros Integradores
-                  </h3>
-                  <h2 class="text-xl text-gray-900 font-medium title-font mb-4">
-                    Centro Integrador Comunitario
-                  </h2>
-                  <p class="leading-relaxed text-lg">
-                    Se realizó la construcción del Centro Integrador Comunitario
-                  </p>
-                  <div className="mt-7 flex  cursor-pointer">
-                    <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
-                      <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
-                      <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-gray-400"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          fill="none"
-                          className="w-5 h-5 text-sky-700"
-                        >
-                          <path
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            stroke-width="2"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </span>
-                      <button
-                        id="cic"
-                        onClick={(e) => pushdatos(e)}
-                        className="relative w-full text-left text-lg transition-colors duration-200 ease-in-out group-hover:text-sky-700 dark:group-hover:text-gray-100"
-                      >
-                        Ver Imágenes
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="xl:w-1/4 md:w-1/2 p-4"></div>
             </div>
           </div>
         </section>

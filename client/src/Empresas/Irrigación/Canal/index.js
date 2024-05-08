@@ -24,6 +24,12 @@ import veintitres from "../Canal/23.jpeg";
 import veinticuatro from "../Canal/24.jpeg";
 import veinticinco from "../Canal/25.jpeg";
 import veintiseis from "../Canal/26.jpeg";
+import veintisiete from "../Canal/27.jpeg";
+import term1 from "../Canal/term1.jpg";
+import term2 from "../Canal/term2.jpg";
+import term3 from "../Canal/term3.jpg";
+import term4 from "../Canal/term4.jpg";
+import term5 from "../Canal/term5.jpg";
 
 const ImagesCanal = {
   uno,
@@ -52,5 +58,11 @@ const ImagesCanal = {
   veinticuatro,
   veinticinco,
   veintiseis,
+  veintisiete,
+  term1,
+  term2,
+  term3,
+  term4,
+  term5,
 };
 export default ImagesCanal;

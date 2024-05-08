@@ -3,7 +3,6 @@ import dos from "../ReddeCloaca/2.jpg";
 import tres from "../ReddeCloaca/3.jpg";
 import cuatro from "../ReddeCloaca/4.jpg";
 import cinco from "../ReddeCloaca/5.jpg";
-import seis from "../ReddeCloaca/6.jpg";
 import siete from "../ReddeCloaca/7.jpg";
 import ocho from "../ReddeCloaca/8.jpg";
 import nueve from "../ReddeCloaca/9.jpg";
@@ -20,8 +19,6 @@ import diecinueve from "../ReddeCloaca/19.jpeg";
 import veinte from "../ReddeCloaca/20.jpeg";
 import veintiuno from "../ReddeCloaca/21.jpeg";
 import veintidos from "../ReddeCloaca/22.jpeg";
-import veintitres from "../ReddeCloaca/23.jpeg";
-import veinticuatro from "../ReddeCloaca/24.jpeg";
 import veinticinco from "../ReddeCloaca/25.jpeg";
 import veintiseis from "../ReddeCloaca/26.jpeg";
 
@@ -31,7 +28,7 @@ const ImagesRedSaniamiento = {
   tres,
   cuatro,
   cinco,
-  seis,
+
   siete,
   ocho,
   nueve,
@@ -48,8 +45,7 @@ const ImagesRedSaniamiento = {
   veinte,
   veintiuno,
   veintidos,
-  veintitres,
-  veinticuatro,
+
   veinticinco,
   veintiseis,
 };

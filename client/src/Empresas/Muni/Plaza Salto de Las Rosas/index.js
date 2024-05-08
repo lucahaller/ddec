@@ -1,16 +1,15 @@
-import tres from "../Plaza Salto de Las Rosas/3.jpg";
 import cuatro from "../Plaza Salto de Las Rosas/4.jpg";
 import cinco from "../Plaza Salto de Las Rosas/5.jpg";
-import seis from "../Plaza Salto de Las Rosas/6.jpg";
+
 import siete from "../Plaza Salto de Las Rosas/7.jpg";
 import ocho from "../Plaza Salto de Las Rosas/8.jpg";
 import nueve from "../Plaza Salto de Las Rosas/9.jpg";
 import diez from "../Plaza Salto de Las Rosas/10.jpg";
 import doce from "../Plaza Salto de Las Rosas/11.jpg";
-import trece from "../Plaza Salto de Las Rosas/12.jpg";
+
 import catorce from "../Plaza Salto de Las Rosas/14.jpg";
 import quince from "../Plaza Salto de Las Rosas/15.jpg";
-import diez6 from "../Plaza Salto de Las Rosas/16.jpg";
+
 import diez7 from "../Plaza Salto de Las Rosas/17.jpg";
 import diez8 from "../Plaza Salto de Las Rosas/18.jpg";
 import diez9 from "../Plaza Salto de Las Rosas/19.jpg";
@@ -27,21 +26,22 @@ import veinte9 from "../Plaza Salto de Las Rosas/29.jpg";
 import treinta from "../Plaza Salto de Las Rosas/30.jpg";
 import treinta1 from "../Plaza Salto de Las Rosas/31.jpg";
 import treinta2 from "../Plaza Salto de Las Rosas/32.jpg";
-
+import treinta3 from "../Plaza Salto de Las Rosas/33.jpg";
+import treinta4 from "../Plaza Salto de Las Rosas/34.jpg";
+import treinta5 from "../Plaza Salto de Las Rosas/35.jpg";
 const ImagesPlazaRosas = {
-  tres,
   cuatro,
   cinco,
-  seis,
+
   siete,
   ocho,
   nueve,
   diez,
   doce,
-  trece,
+
   catorce,
   quince,
-  diez6,
+
   diez7,
   diez8,
   diez9,
@@ -58,5 +58,8 @@ const ImagesPlazaRosas = {
   treinta,
   treinta1,
   treinta2,
+  treinta3,
+  treinta4,
+  treinta5,
 };
 export default ImagesPlazaRosas;

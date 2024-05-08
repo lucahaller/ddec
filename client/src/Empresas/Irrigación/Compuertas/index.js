@@ -13,6 +13,9 @@ import doce from "../Compuertas/12.jpeg";
 import trece from "../Compuertas/13.jpeg";
 import catorce from "../Compuertas/14.jpeg";
 import quince from "../Compuertas/15.jpeg";
+import diez6 from "../Compuertas/16.jpeg";
+import diez7 from "../Compuertas/17.jpeg";
+import diez8 from "../Compuertas/18.jpeg";
 
 const ImagesCompuertas = {
   uno,
@@ -30,5 +33,8 @@ const ImagesCompuertas = {
   trece,
   catorce,
   quince,
+  diez6,
+  diez7,
+  diez8,
 };
 export default ImagesCompuertas;
