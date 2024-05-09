@@ -355,7 +355,7 @@ export default function Content() {
             >
               <img
                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                src={ImagesPlazaRosas.veinte5}
+                src={ImagesPlazaRosas.treinta4}
                 alt=""
               />
             </div>
@@ -806,7 +806,8 @@ export default function Content() {
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
                   Se realizó la construcción de la Plaza Manuel Belgrano ubicada
-                  en el distrito de Salto De Las Rosas
+                  entre las calles República de Siria, MonteCaseros, Presidente
+                  Alvear y Libertad
                 </p>
                 <div className=" flex  cursor-pointer">
                   <div className="relative inline-flex items-center justify-start py-3  pr-12 overflow-hidden font-semibold  text-black-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6   dark:text-white dark:hover:text-gray-200 dark:shadow-none group">

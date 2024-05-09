@@ -21,7 +21,7 @@ export default function Hero() {
           data-aos="fade-up-right"
           dat
           a-aos-anchor-placement="center-bottom"
-          class=" shadow-lg shadow-gray-400 xs:w-full rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
+          class=" shadow-lg shadow-gray-400 xs:w-full xl:max-w-3xl rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -67,7 +67,7 @@ export default function Hero() {
           data-aos-anchor-placement="center-bottom"
           class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:pl-0 flex flex-col md:items-start md:text-left items-center text-center"
         >
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          <h1 class="title-font  sm:text-4xl text-3xl mb-4 font-medium text-white">
             Edificio Afip
             <br class="hidden lg:inline-block" />
             <p>San Luis</p>
@@ -96,7 +96,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2 xs:w-full xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
+          class=" shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg xl:max-w-3xl lg:w-full md:w-1/2 xs:w-full xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
@@ -110,7 +110,7 @@ export default function Hero() {
         <div
           data-aos="fade-up-right"
           data-aos-anchor-placement="center-bottom"
-          class="shadow-lg shadow-gray-400 rounded-lg lg:max-w-lg lg:w-full md:w-1/2  xs:w-full xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
+          class="shadow-lg shadow-gray-400 rounded-lg xl:max-w-3xl lg:max-w-lg lg:w-full md:w-1/2  xs:w-full xs:h-3/6 mb-10 md:mb-0 sm:h-3/6"
         >
           <img
             class="object-cover object-center rounded w-full h-full "
